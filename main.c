@@ -1,6 +1,6 @@
 #include<lpc21xx.h>
 #include<string.h>
-#include "lc.h"
+#include "lcd.h"
 #include "uart0.h"
 #include "uart1.h"
 
@@ -63,7 +63,7 @@ id=scan();
   ms_delay(10);
   uart1_str("at+cmgf=1\r\n");
   ms_delay(10);
-  uart1_str("at+cmgs=\"+919486821832\"\r\n");
+  uart1_str("at+cmgs=\"+91XXXXXXXXXX\"\r\n");
   ms_delay(10);
   //while(uart1_rx() != '>');
   uart1_str("someone take your bike ALEART");
